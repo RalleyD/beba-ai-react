@@ -6,81 +6,29 @@ export interface Pillar {
   subtitle: string;
   icon: string;
   description: string;
-  color: string;
-  visual: string;
-}
-
-export interface Product {
-  id: string;
-  name: string;
-  tagline: string;
-  description: string;
-  features: string[];
-  marketImpact?: string[];
-  clinicalValidation?: string[];
-  ctaText: string;
-  ctaLink: string;
+  color?: string;
+  visual?: string;
 }
 
 export interface Founder {
   name: string;
   role: string;
-  title: string;
+  subtitle: string;
   bio: string;
   vision: string;
-  image?: string;
+  image: string;
 }
 
-export interface Statistic {
-  value: string;
-  label: string;
-  suffix?: string;
-  prefix?: string;
-}
-
-export interface DemoScene {
-  id: string;
-  title: string;
-  component: React.ComponentType;
-  description: string;
-  icon: string;
-}
-
-export interface NavLink {
-  label: string;
-  href: string;
-  isExternal?: boolean;
-}
-
-export interface ServiceFeature {
+export interface Feature {
+  icon: React.ReactNode;
   title: string;
   description: string;
-  icon: string;
 }
 
-export interface MarketOpportunity {
-  metric: string;
+export interface Stat {
   value: string;
-  description: string;
-}
-
-export interface ComparisonItem {
-  feature: string;
-  without: string;
-  with: string;
-}
-
-export interface ClinicalEvidence {
-  metric: string;
-  improvement: string;
-  confidence: string;
-}
-
-export interface AnimationVariant {
-  initial: any;
-  animate: any;
-  exit?: any;
-  transition?: any;
+  label: string;
+  description?: string;
 }
 
 export interface TouchGesture {
